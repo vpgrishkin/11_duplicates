@@ -39,9 +39,9 @@ def input_dir_name_or_exit():
 
 def print_duplicates(duplicates):
     if duplicates is None:
-        print("Дубликаты не найдены")
+        print('Дубликаты не найдены')
     else:
-        print("Найдены дубликаты:")
+        print('Найдены дубликаты:')
         for paths in duplicates:
             print('=' * 80)
             for path in paths:
@@ -53,3 +53,4 @@ if __name__ == '__main__':
     file_name_size_and_paths_dict = get_file_name_size_and_paths_dict(dir_name)
     duplicates = find_duplicates(file_name_size_and_paths_dict)
     print_duplicates(duplicates)
+    
